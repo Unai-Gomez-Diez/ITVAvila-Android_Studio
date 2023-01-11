@@ -1,10 +1,12 @@
-package com.iesam.itvavila.data;
+package src.com.iesam.itvavila.data;
 
-import com.iesam.itvavila.domain.models.Inspeccion;
-import com.iesam.itvavila.domain.models.Propietario;
+import src.com.iesam.itvavila.domain.models.Inspeccion;
+import src.com.iesam.itvavila.domain.models.Propietario;
 
 import java.util.Map;
 import java.util.TreeMap;
+
+import src.com.iesam.itvavila.domain.models.Inspeccion;
 
 public class InspeccionDataStore {
     private static InspeccionDataStore instance = null;
@@ -33,3 +35,4 @@ public class InspeccionDataStore {
         }
         return instance;
     }
+}
