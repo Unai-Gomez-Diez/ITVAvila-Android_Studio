@@ -1,4 +1,4 @@
-package com.iesam.itvavila.data;
+package src.com.iesam.itvavila.data;
 
 import src.com.iesam.itvavila.domain.models.Propietario;
 

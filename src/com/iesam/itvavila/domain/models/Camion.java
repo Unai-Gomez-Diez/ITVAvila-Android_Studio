@@ -1,4 +1,4 @@
-package com.iesam.itvavila.domain.models;
+package src.com.iesam.itvavila.domain.models;
 
 import src.com.iesam.itvavila.domain.models.Vehiculo;
 
