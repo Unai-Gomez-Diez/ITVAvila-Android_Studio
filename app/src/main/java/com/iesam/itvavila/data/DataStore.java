@@ -1,26 +1,28 @@
 package com.iesam.itvavila.data;
 
+import java.util.Date;
+
 public class DataStore {
 
 
 
         public Integer size;
-        public Integer ruedas;
 
-        public DataStore(){
+        private Date now;
+
+        public static Integer id;
+
+        private DataStore(){
 
         }
 
 
 
-        public DataStore(Integer size){
+        private DataStore(Integer size){
                 this.size = size;
         }
 
-        public DataStore(Integer size, Integer ruedas){
-                this.size=size;
-                this.ruedas=ruedas;
-        }
+
 
         public Integer getSize() {
                 return size;
@@ -29,11 +31,12 @@ public class DataStore {
         public void setSize(Integer size) {
                 this.size = size;
         }
-        public Integer getRuedas() {
-                return ruedas;
-        }
 
-        public void setRuedas(Integer ruedas) {
-                this.ruedas = ruedas;
-        }
+
+
+         public static DataStore build(Integer size){
+                DataStore dataStore = new DataStore(size);
+                dataStore.now = new Date();
+                return dataStore;
+         }
 }
