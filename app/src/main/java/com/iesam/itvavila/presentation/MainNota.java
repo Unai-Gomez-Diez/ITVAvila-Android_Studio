@@ -12,7 +12,7 @@ import com.iesam.itvavila.domain.usecase.ObtenerPropietarioUseCase;
 import com.iesam.itvavila.domain.usecase.ObtenerVehiculoUseCase;
 
 public class MainNota {
-    public static void main(String[] args) {
+    public void main() {
         Propietario propietario = new Propietario();
         propietario.setCodigo("1");
         propietario.setDni("1234567-M");
