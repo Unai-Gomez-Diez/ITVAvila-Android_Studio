@@ -36,5 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Bicicleta.size = 1;
         bicicleta1.getSize();
 
+        MainSingleton mainSingleton = new MainSingleton();
+        mainSingleton.main();
     }
 }
